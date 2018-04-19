@@ -43,11 +43,11 @@ spec:
         imagePullPolicy: IfNotPresent
         resources:
           limits:
-            cpu: "0.5"
-            memory: "200Mi"
+            cpu: "1"
+            memory: "150Mi"
           requests:
-            cpu: "0.5"
-            memory: "200Mi"
+            cpu: "1"
+            memory: "150Mi"
         ports:
         - containerPort: 80
 ---
@@ -107,4 +107,4 @@ spec:
     name: java-kubernetes-demo
   minReplicas: 1
   maxReplicas: 10
-  targetCPUUtilizationPercentage: 50
+  targetCPUUtilizationPercentage: 20
