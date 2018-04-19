@@ -15,7 +15,7 @@ public class app {
     public static void main(String[] args) {
 
         Logger log = LoggerFactory.getLogger(app.class);
-        port(8080);
+        port(80);
 
         get("/", (request, response) -> {
             Long visits = null;

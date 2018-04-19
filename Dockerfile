@@ -12,6 +12,6 @@ RUN ./gradlew clean
 
 RUN ./gradlew jarGenerator
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ["java", "-jar", "/app/build/libs/app-0.1.jar"]
